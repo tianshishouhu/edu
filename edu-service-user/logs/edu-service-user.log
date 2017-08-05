@@ -1,0 +1,552 @@
+[INFO ][20170328 22:58:10,008][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@560b32b6: startup date [Tue Mar 28 22:58:09 CST 2017]; root of context hierarchy
+[INFO ][20170328 22:58:10,480][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20170328 22:58:12,541][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+[INFO ][20170328 22:58:12,735][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/dubbo-provider.xml]
+[INFO ][20170328 22:58:13,148][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20170328 22:58:14,366][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20170328 22:58:14,367][PropertiesLoaderSupport:172] Loading properties file from class path resource [service.properties]
+[INFO ][20170328 22:58:15,026][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b857dcf: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,pmsUserFacade,pmsUserBiz,pmsUserDao,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sqlSessionFactory,sessionTemplate,transactionManager,gw-service-user,com.alibaba.dubbo.config.RegistryConfig,dubbo,com.alibaba.dubbo.config.MonitorConfig,wusc.edu.facade.user.service.PmsUserFacade,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][20170328 22:58:40,143][DruidDataSource:643] init datasource error, url: jdbc:mysql://192.168.1.111:3306/edu_demo?useUnicode=true&characterEncoding=utf-8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1137)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:355)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2490)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2527)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2309)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:419)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:632)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1479)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1387)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1128)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:615)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1045)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:949)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:487)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByName(AbstractAutowireCapableBeanFactory.java:1146)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:912)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:770)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:912)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:770)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:20)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:241)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:258)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:305)
+	... 93 more
+[ERROR][20170328 22:58:40,187][DruidDataSource:660] dataSource init error
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1137)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:355)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2490)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2527)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2309)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:419)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:632)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1479)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1387)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1128)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:615)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1045)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:949)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:487)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByName(AbstractAutowireCapableBeanFactory.java:1146)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:912)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:770)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:912)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:770)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:20)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:241)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:258)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:305)
+	... 93 more
+[INFO ][20170328 22:58:40,219][DruidDataSource:669] {dataSource-1} inited
+[INFO ][20170328 22:58:40,264][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b857dcf: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,pmsUserFacade,pmsUserBiz,pmsUserDao,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sqlSessionFactory,sessionTemplate,transactionManager,gw-service-user,com.alibaba.dubbo.config.RegistryConfig,dubbo,com.alibaba.dubbo.config.MonitorConfig,wusc.edu.facade.user.service.PmsUserFacade,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][20170328 22:58:40,265][DubboProvider:23] == DubboProvider context start error:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pmsUserFacade': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private wusc.edu.service.user.biz.PmsUserBiz wusc.edu.facade.user.service.impl.PmsUserFacadeImpl.pmsUserBiz; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pmsUserBiz': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private wusc.edu.service.user.dao.PmsUserDao wusc.edu.service.user.biz.PmsUserBiz.pmsUserDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pmsUserDao' defined in file [E:\repository\git\wj\edu-service-user\target\classes\wusc\edu\service\user\dao\impl\PmsUserDaoImpl.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionTemplate' defined in class path resource [spring/spring-mybatis.xml]: Cannot resolve reference to bean 'sqlSessionFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [spring/spring-mybatis.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [spring/spring-mybatis.xml]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:20)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private wusc.edu.service.user.biz.PmsUserBiz wusc.edu.facade.user.service.impl.PmsUserFacadeImpl.pmsUserBiz; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pmsUserBiz': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private wusc.edu.service.user.dao.PmsUserDao wusc.edu.service.user.biz.PmsUserBiz.pmsUserDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pmsUserDao' defined in file [E:\repository\git\wj\edu-service-user\target\classes\wusc\edu\service\user\dao\impl\PmsUserDaoImpl.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionTemplate' defined in class path resource [spring/spring-mybatis.xml]: Cannot resolve reference to bean 'sqlSessionFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [spring/spring-mybatis.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [spring/spring-mybatis.xml]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	... 13 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pmsUserBiz': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private wusc.edu.service.user.dao.PmsUserDao wusc.edu.service.user.biz.PmsUserBiz.pmsUserDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pmsUserDao' defined in file [E:\repository\git\wj\edu-service-user\target\classes\wusc\edu\service\user\dao\impl\PmsUserDaoImpl.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionTemplate' defined in class path resource [spring/spring-mybatis.xml]: Cannot resolve reference to bean 'sqlSessionFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [spring/spring-mybatis.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [spring/spring-mybatis.xml]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:912)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:770)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486)
+	... 15 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private wusc.edu.service.user.dao.PmsUserDao wusc.edu.service.user.biz.PmsUserBiz.pmsUserDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pmsUserDao' defined in file [E:\repository\git\wj\edu-service-user\target\classes\wusc\edu\service\user\dao\impl\PmsUserDaoImpl.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionTemplate' defined in class path resource [spring/spring-mybatis.xml]: Cannot resolve reference to bean 'sqlSessionFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [spring/spring-mybatis.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [spring/spring-mybatis.xml]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	... 26 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pmsUserDao' defined in file [E:\repository\git\wj\edu-service-user\target\classes\wusc\edu\service\user\dao\impl\PmsUserDaoImpl.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionTemplate' defined in class path resource [spring/spring-mybatis.xml]: Cannot resolve reference to bean 'sqlSessionFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [spring/spring-mybatis.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [spring/spring-mybatis.xml]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:912)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:770)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486)
+	... 28 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionTemplate' defined in class path resource [spring/spring-mybatis.xml]: Cannot resolve reference to bean 'sqlSessionFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [spring/spring-mybatis.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [spring/spring-mybatis.xml]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:329)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:615)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1045)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:949)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:487)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByName(AbstractAutowireCapableBeanFactory.java:1146)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	... 37 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [spring/spring-mybatis.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [spring/spring-mybatis.xml]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:329)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1387)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1128)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	... 51 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [spring/spring-mybatis.xml]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1482)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	... 61 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1137)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:355)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2490)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2527)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2309)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:419)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:632)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1479)
+	... 68 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:241)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:258)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:305)
+	... 93 more
+[INFO ][20170328 23:03:47,144][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@48ca42a9: startup date [Tue Mar 28 23:03:47 CST 2017]; root of context hierarchy
+[INFO ][20170328 23:03:47,703][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20170328 23:03:50,803][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+[INFO ][20170328 23:03:51,043][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/dubbo-provider.xml]
+[INFO ][20170328 23:03:51,713][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20170328 23:03:54,312][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20170328 23:03:54,337][PropertiesLoaderSupport:172] Loading properties file from class path resource [service.properties]
+[INFO ][20170328 23:03:55,328][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7d34a4c3: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,pmsUserFacade,pmsUserBiz,pmsUserDao,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sqlSessionFactory,sessionTemplate,transactionManager,gw-service-user,com.alibaba.dubbo.config.RegistryConfig,dubbo,com.alibaba.dubbo.config.MonitorConfig,wusc.edu.facade.user.service.PmsUserFacade,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20170328 23:04:22,965][DruidDataSource:669] {dataSource-1} inited
+[INFO ][20170328 23:04:28,766][ServiceBean:107]  [DUBBO] The service ready on spring started. service: wusc.edu.facade.user.service.PmsUserFacade, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:04:30,173][ServiceConfig:510]  [DUBBO] Export dubbo service wusc.edu.facade.user.service.PmsUserFacade to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:04:30,173][ServiceConfig:470]  [DUBBO] Export dubbo service wusc.edu.facade.user.service.PmsUserFacade to url dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&pid=8556&side=provider&timestamp=1490713469118, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:04:30,204][ServiceConfig:481]  [DUBBO] Register dubbo service wusc.edu.facade.user.service.PmsUserFacade url dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&monitor=dubbo%3A%2F%2F192.168.1.111%3A2181%2Fcom.alibaba.dubbo.registry.RegistryService%3Fapplication%3Dgw-service-user%26dubbo%3D2.5.3%26pid%3D8556%26protocol%3Dregistry%26refer%3Ddubbo%253D2.5.3%2526interface%253Dcom.alibaba.dubbo.monitor.MonitorService%2526pid%253D8556%2526timestamp%253D1490713470174%26registry%3Dzookeeper%26timestamp%3D1490713468914&pid=8556&side=provider&timestamp=1490713469118 to registry registry://192.168.1.111:2181/com.alibaba.dubbo.registry.RegistryService?application=gw-service-user&dubbo=2.5.3&pid=8556&registry=zookeeper&timestamp=1490713468914, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:04:32,849][AbstractServer:69]  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /169.254.63.110:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:04:33,200][AbstractRegistry:232]  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, data: {wusc.edu.facade.user.service.PmsUserFacade=dubbo://192.168.1.111:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=update,updateUserPwd,listPage,findUserByUserNo,getById,create,deleteUserById&pid=2161&revision=1.0-SNAPSHOT&side=provider&timestamp=1484475769934 override://0.0.0.0/wusc.edu.facade.user.service.PmsUserFacade?category=configurators&dynamic=false&enabled=true&owner=root empty://169.254.63.110/wusc.edu.facade.user.service.PmsUserFacade?application=edu-web-boss&category=routers&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=9116&revision=1.0-SNAPSHOT&side=consumer&timestamp=1484489258953, com.alibaba.dubbo.monitor.MonitorService=dubbo://192.168.1.111:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=1920&revision=2.5.3&side=provider&timestamp=1484475586631 empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=configurators&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=9116&timestamp=1484489259172 empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=9116&timestamp=1484489259172}, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:04:33,642][ZkEventThread:64] Starting ZkClient event thread.
+[INFO ][20170328 23:04:34,068][Environment:100] Client environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+[INFO ][20170328 23:04:34,076][Environment:100] Client environment:host.name=windows10.microdone.cn
+[INFO ][20170328 23:04:34,077][Environment:100] Client environment:java.version=1.7.0_17
+[INFO ][20170328 23:04:34,077][Environment:100] Client environment:java.vendor=Oracle Corporation
+[INFO ][20170328 23:04:34,077][Environment:100] Client environment:java.home=D:\Program Files\Java\jdk1.7.0_17\jre
+[INFO ][20170328 23:04:34,078][Environment:100] Client environment:java.class.path=E:\repository\git\wj\edu-service-user\target\test-classes;E:\repository\git\wj\edu-service-user\target\classes;E:\repository\git\wj\edu-common\target\classes;E:\repository\git\wj\edu-common-config\target\classes;E:\repository\git\wj\edu-common-core\target\classes;E:\repository\git\wj\edu-facade-user\target\classes;D:\java\maven\repos\antlr\antlr\2.7.6\antlr-2.7.6.jar;D:\java\maven\repos\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\java\maven\repos\org\aspectj\aspectjweaver\1.7.3\aspectjweaver-1.7.3.jar;D:\java\maven\repos\cglib\cglib\2.2.2\cglib-2.2.2.jar;D:\java\maven\repos\asm\asm\3.3.1\asm-3.3.1.jar;D:\java\maven\repos\net\sf\json-lib\json-lib\2.3\json-lib-2.3-jdk15.jar;D:\java\maven\repos\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;D:\java\maven\repos\ognl\ognl\3.0.6\ognl-3.0.6.jar;D:\java\maven\repos\oro\oro\2.0.8\oro-2.0.8.jar;D:\java\maven\repos\commons-beanutils\commons-beanutils\1.8.0\commons-beanutils-1.8.0.jar;D:\java\maven\repos\commons-codec\commons-codec\1.8\commons-codec-1.8.jar;D:\java\maven\repos\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;D:\java\maven\repos\commons-digester\commons-digester\2.0\commons-digester-2.0.jar;D:\java\maven\repos\commons-fileupload\commons-fileupload\1.3.1\commons-fileupload-1.3.1.jar;D:\java\maven\repos\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;D:\java\maven\repos\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;D:\java\maven\repos\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;D:\java\maven\repos\commons-validator\commons-validator\1.1.4\commons-validator-1.1.4.jar;D:\java\maven\repos\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;D:\java\maven\repos\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;D:\java\maven\repos\net\sf\ezmorph\ezmorph\1.0.6\ezmorph-1.0.6.jar;D:\java\maven\repos\javassist\javassist\3.12.1.GA\javassist-3.12.1.GA.jar;D:\java\maven\repos\jstl\jstl\1.2\jstl-1.2.jar;D:\java\maven\repos\javax\transaction\jta\1.1\jta-1.1.jar;D:\java\maven\repos\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\java\maven\repos\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;D:\java\maven\repos\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;D:\java\maven\repos\org\springframework\spring-aop\3.2.4.RELEASE\spring-aop-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-aspects\3.2.4.RELEASE\spring-aspects-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-beans\3.2.4.RELEASE\spring-beans-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-context\3.2.4.RELEASE\spring-context-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-context-support\3.2.4.RELEASE\spring-context-support-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-core\3.2.4.RELEASE\spring-core-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-expression\3.2.4.RELEASE\spring-expression-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-instrument\3.2.4.RELEASE\spring-instrument-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-instrument-tomcat\3.2.4.RELEASE\spring-instrument-tomcat-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-jdbc\3.2.4.RELEASE\spring-jdbc-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-jms\3.2.4.RELEASE\spring-jms-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-orm\3.2.4.RELEASE\spring-orm-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-oxm\3.2.4.RELEASE\spring-oxm-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-struts\3.2.4.RELEASE\spring-struts-3.2.4.RELEASE.jar;D:\java\maven\repos\struts\struts\1.2.9\struts-1.2.9.jar;D:\java\maven\repos\xalan\xalan\2.7.1\xalan-2.7.1.jar;D:\java\maven\repos\xalan\serializer\2.7.1\serializer-2.7.1.jar;D:\java\maven\repos\org\springframework\spring-test\3.2.4.RELEASE\spring-test-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-tx\3.2.4.RELEASE\spring-tx-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-web\3.2.4.RELEASE\spring-web-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-webmvc\3.2.4.RELEASE\spring-webmvc-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-webmvc-portlet\3.2.4.RELEASE\spring-webmvc-portlet-3.2.4.RELEASE.jar;D:\java\maven\repos\org\mybatis\mybatis\3.2.8\mybatis-3.2.8.jar;D:\java\maven\repos\org\mybatis\mybatis-spring\1.2.2\mybatis-spring-1.2.2.jar;D:\java\maven\repos\org\apache\struts\struts2-json-plugin\2.3.15.1\struts2-json-plugin-2.3.15.1.jar;D:\java\maven\repos\org\apache\struts\struts2-convention-plugin\2.3.15.1\struts2-convention-plugin-2.3.15.1.jar;D:\java\maven\repos\org\apache\struts\struts2-core\2.3.15.1\struts2-core-2.3.15.1.jar;D:\java\maven\repos\org\freemarker\freemarker\2.3.19\freemarker-2.3.19.jar;E:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\lib\tools.jar;D:\java\maven\repos\org\apache\struts\struts2-spring-plugin\2.3.15.1\struts2-spring-plugin-2.3.15.1.jar;D:\java\maven\repos\org\apache\struts\xwork\xwork-core\2.3.15.1\xwork-core-2.3.15.1.jar;D:\java\maven\repos\asm\asm-commons\3.3\asm-commons-3.3.jar;D:\java\maven\repos\asm\asm-tree\3.3\asm-tree-3.3.jar;D:\java\maven\repos\org\apache\tomcat\servlet-api\6.0.37\servlet-api-6.0.37.jar;D:\java\maven\repos\org\apache\tomcat\jsp-api\6.0.37\jsp-api-6.0.37.jar;D:\java\maven\repos\org\apache\tomcat\el-api\6.0.37\el-api-6.0.37.jar;D:\java\maven\repos\com\alibaba\druid\1.0.12\druid-1.0.12.jar;E:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\lib\jconsole.jar;D:\java\maven\repos\org\jsoup\jsoup\1.7.3\jsoup-1.7.3.jar;D:\java\maven\repos\mysql\mysql-connector-java\5.1.32\mysql-connector-java-5.1.32.jar;D:\java\maven\repos\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;D:\java\maven\repos\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;D:\java\maven\repos\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;D:\java\maven\repos\org\apache\zookeeper\zookeeper\3.4.5\zookeeper-3.4.5.jar;D:\java\maven\repos\jline\jline\0.9.94\jline-0.9.94.jar;D:\java\maven\repos\com\101tec\zkclient\0.3\zkclient-0.3.jar;D:\java\maven\repos\junit\junit\4.11\junit-4.11.jar;D:\java\maven\repos\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar
+[INFO ][20170328 23:04:34,080][Environment:100] Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.7.0_17\jre\bin;E:/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/jre/bin/client;E:/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/jre/bin;E:/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/jre/lib/i386;D:\android\adt-bundle-windows-x86_64-20130729\adt-bundle-windows-x86_64-20130729\sdk\platform-tools;D:\Program Files\Java\jdk1.7.0_17\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;D:\Program Files\MySQL\MySQL Server 5.5\bin;E:\mysql\3306\bin;E:\Program Files\TortoiseGit\bin;;.
+[INFO ][20170328 23:04:34,081][Environment:100] Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+[INFO ][20170328 23:04:34,082][Environment:100] Client environment:java.compiler=<NA>
+[INFO ][20170328 23:04:34,082][Environment:100] Client environment:os.name=Windows 7
+[INFO ][20170328 23:04:34,082][Environment:100] Client environment:os.arch=amd64
+[INFO ][20170328 23:04:34,082][Environment:100] Client environment:os.version=6.1
+[INFO ][20170328 23:04:34,083][Environment:100] Client environment:user.name=Administrator
+[INFO ][20170328 23:04:34,083][Environment:100] Client environment:user.home=C:\Users\Administrator
+[INFO ][20170328 23:04:34,084][Environment:100] Client environment:user.dir=E:\repository\git\wj\edu-service-user
+[INFO ][20170328 23:04:34,086][ZooKeeper:438] Initiating client connection, connectString=192.168.1.111:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@17ba21ec
+[INFO ][20170328 23:04:43,908][ClientCnxn$SendThread:966] Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170328 23:04:43,914][ClientCnxn$SendThread:849] Socket connection established to 192.168.1.111/192.168.1.111:2181, initiating session
+[INFO ][20170328 23:04:44,192][ClientCnxn$SendThread:1207] Session establishment complete on server 192.168.1.111/192.168.1.111:2181, sessionid = 0x15b157094e00002, negotiated timeout = 30000
+[INFO ][20170328 23:04:44,198][ZkClient:449] zookeeper state changed (SyncConnected)
+[INFO ][20170328 23:04:44,206][AbstractRegistry:302]  [DUBBO] Register: dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&pid=8556&side=provider&timestamp=1490713469118, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:04:44,792][AbstractRegistry:325]  [DUBBO] Subscribe: provider://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&category=configurators&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&pid=8556&side=provider&timestamp=1490713469118, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:04:45,729][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&category=configurators&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&pid=8556&side=provider&timestamp=1490713469118, urls: [override://0.0.0.0/wusc.edu.facade.user.service.PmsUserFacade?category=configurators&dynamic=false&enabled=true&owner=root], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:11:38,354][AbstractRegistry:302]  [DUBBO] Register: consumer://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=consumers&check=false&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=8556&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:11:38,759][AbstractRegistry:325]  [DUBBO] Subscribe: consumer://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=providers,configurators,routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=8556&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:11:42,431][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url consumer://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=providers,configurators,routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=8556&timestamp=1490713470174, urls: [dubbo://192.168.1.111:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=1934&revision=2.5.3&side=provider&timestamp=1490713372658, empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=configurators&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=8556&timestamp=1490713470174, empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=8556&timestamp=1490713470174], dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:11:42,580][AbstractClient:287]  [DUBBO] Successed connect to server /192.168.1.111:7070 from NettyClient 169.254.63.110 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x0717023f, /192.168.1.101:61340 => /192.168.1.111:7070]], dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:11:42,581][AbstractClient:105]  [DUBBO] Start NettyClient USER-20151008FU/169.254.63.110 connect to the server /192.168.1.111:7070, dubbo version: 2.5.3, current host: 169.254.63.110
+[WARN ][20170328 23:11:48,404][AbstractServer:197]  [DUBBO] All clients has discontected from /169.254.63.110:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:11:48,416][DubboProtocol$1:130]  [DUBBO] disconected from /169.254.63.110:61313,url:dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&monitor=dubbo%3A%2F%2F192.168.1.111%3A2181%2Fcom.alibaba.dubbo.registry.RegistryService%3Fapplication%3Dgw-service-user%26dubbo%3D2.5.3%26pid%3D8556%26protocol%3Dregistry%26refer%3Ddubbo%253D2.5.3%2526interface%253Dcom.alibaba.dubbo.monitor.MonitorService%2526pid%253D8556%2526timestamp%253D1490713470174%26registry%3Dzookeeper%26timestamp%3D1490713468914&pid=8556&side=provider&timestamp=1490713469118, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:12:42,785][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[ERROR][20170328 23:12:45,886][DubboMonitor$1:72]  [DUBBO] Unexpected error occur at send statistic, cause: Failed to invoke the method collect in the service com.alibaba.dubbo.monitor.MonitorService. Tried 3 times of the providers [192.168.1.111:7070] (1/1) from the registry 192.168.1.111:2181 on the consumer 169.254.63.110 using the dubbo version 2.5.3. Last error is: Invoke remote method timeout. method: collect, provider: dubbo://192.168.1.111:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, cause: Waiting server-side response timeout. start time: 2017-03-28 23:12:44.879, end time: 2017-03-28 23:12:45.881, client elapsed: 1 ms, server elapsed: 1001 ms, timeout: 1000 ms, request: Request [id=2, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=collect, parameterTypes=[class com.alibaba.dubbo.common.URL], arguments=[count://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade/findUserByUserNo?application=gw-service-user&concurrent=1&consumer=169.254.63.110&elapsed=4686&failure=0&input=233&interface=wusc.edu.facade.user.service.PmsUserFacade&max.concurrent=1&max.elapsed=4686&max.input=233&max.output=0&method=findUserByUserNo&output=0&success=1&timestamp=1490713962787], attachments={path=com.alibaba.dubbo.monitor.MonitorService, interface=com.alibaba.dubbo.monitor.MonitorService, version=0.0.0}]], channel: /192.168.1.101:61340 -> /192.168.1.111:7070, dubbo version: 2.5.3, current host: 169.254.63.110
+com.alibaba.dubbo.rpc.RpcException: Failed to invoke the method collect in the service com.alibaba.dubbo.monitor.MonitorService. Tried 3 times of the providers [192.168.1.111:7070] (1/1) from the registry 192.168.1.111:2181 on the consumer 169.254.63.110 using the dubbo version 2.5.3. Last error is: Invoke remote method timeout. method: collect, provider: dubbo://192.168.1.111:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, cause: Waiting server-side response timeout. start time: 2017-03-28 23:12:44.879, end time: 2017-03-28 23:12:45.881, client elapsed: 1 ms, server elapsed: 1001 ms, timeout: 1000 ms, request: Request [id=2, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=collect, parameterTypes=[class com.alibaba.dubbo.common.URL], arguments=[count://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade/findUserByUserNo?application=gw-service-user&concurrent=1&consumer=169.254.63.110&elapsed=4686&failure=0&input=233&interface=wusc.edu.facade.user.service.PmsUserFacade&max.concurrent=1&max.elapsed=4686&max.input=233&max.output=0&method=findUserByUserNo&output=0&success=1&timestamp=1490713962787], attachments={path=com.alibaba.dubbo.monitor.MonitorService, interface=com.alibaba.dubbo.monitor.MonitorService, version=0.0.0}]], channel: /192.168.1.101:61340 -> /192.168.1.111:7070
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:101)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy0.collect(proxy0.java)
+	at com.alibaba.dubbo.monitor.dubbo.DubboMonitor.send(DubboMonitor.java:113)
+	at com.alibaba.dubbo.monitor.dubbo.DubboMonitor$1.run(DubboMonitor.java:70)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:351)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout. start time: 2017-03-28 23:12:44.879, end time: 2017-03-28 23:12:45.881, client elapsed: 1 ms, server elapsed: 1001 ms, timeout: 1000 ms, request: Request [id=2, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=collect, parameterTypes=[class com.alibaba.dubbo.common.URL], arguments=[count://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade/findUserByUserNo?application=gw-service-user&concurrent=1&consumer=169.254.63.110&elapsed=4686&failure=0&input=233&interface=wusc.edu.facade.user.service.PmsUserFacade&max.concurrent=1&max.elapsed=4686&max.input=233&max.output=0&method=findUserByUserNo&output=0&success=1&timestamp=1490713962787], attachments={path=com.alibaba.dubbo.monitor.MonitorService, interface=com.alibaba.dubbo.monitor.MonitorService, version=0.0.0}]], channel: /192.168.1.101:61340 -> /192.168.1.111:7070
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:107)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96)
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77)
+	... 14 more
+[WARN ][20170328 23:12:47,748][DefaultFuture:242]  [DUBBO] The timeout response finally returned at 2017-03-28 23:12:47.747, response Response [id=2, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.1.101:61340 -> /192.168.1.111:7070, dubbo version: 2.5.3, current host: 169.254.63.110
+[WARN ][20170328 23:12:47,948][DefaultFuture:242]  [DUBBO] The timeout response finally returned at 2017-03-28 23:12:47.947, response Response [id=0, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.1.101:61340 -> /192.168.1.111:7070, dubbo version: 2.5.3, current host: 169.254.63.110
+[WARN ][20170328 23:12:47,950][DefaultFuture:242]  [DUBBO] The timeout response finally returned at 2017-03-28 23:12:47.950, response Response [id=1, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.1.101:61340 -> /192.168.1.111:7070, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:13:45,932][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:14:46,194][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:15:46,234][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:16:46,314][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:17:46,352][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:18:46,432][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:19:46,460][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:20:46,512][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:21:46,624][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:22:46,919][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:23:47,246][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:24:47,282][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:25:47,688][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:26:47,801][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:27:47,891][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8556&revision=2.5.3&side=provider&timestamp=1490713470174, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:31:25,084][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2c5c271a: startup date [Tue Mar 28 23:31:25 CST 2017]; root of context hierarchy
+[INFO ][20170328 23:31:26,280][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20170328 23:31:29,218][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+[INFO ][20170328 23:31:29,520][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/dubbo-provider.xml]
+[INFO ][20170328 23:31:29,697][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20170328 23:31:30,828][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20170328 23:31:30,829][PropertiesLoaderSupport:172] Loading properties file from class path resource [service.properties]
+[INFO ][20170328 23:31:31,523][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@70d7998b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,pmsUserFacade,pmsUserBiz,pmsUserDao,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sqlSessionFactory,sessionTemplate,transactionManager,gw-service-user,com.alibaba.dubbo.config.RegistryConfig,dubbo,com.alibaba.dubbo.config.MonitorConfig,wusc.edu.facade.user.service.PmsUserFacade,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20170328 23:31:37,984][DruidDataSource:669] {dataSource-1} inited
+[INFO ][20170328 23:31:40,818][ServiceBean:107]  [DUBBO] The service ready on spring started. service: wusc.edu.facade.user.service.PmsUserFacade, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:31:41,417][ServiceConfig:510]  [DUBBO] Export dubbo service wusc.edu.facade.user.service.PmsUserFacade to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:31:41,418][ServiceConfig:470]  [DUBBO] Export dubbo service wusc.edu.facade.user.service.PmsUserFacade to url dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=9840&side=provider&timestamp=1490715100874, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:31:41,478][ServiceConfig:481]  [DUBBO] Register dubbo service wusc.edu.facade.user.service.PmsUserFacade url dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&monitor=dubbo%3A%2F%2F192.168.1.111%3A2181%2Fcom.alibaba.dubbo.registry.RegistryService%3Fapplication%3Dgw-service-user%26dubbo%3D2.5.3%26pid%3D9840%26protocol%3Dregistry%26refer%3Ddubbo%253D2.5.3%2526interface%253Dcom.alibaba.dubbo.monitor.MonitorService%2526pid%253D9840%2526timestamp%253D1490715101419%26registry%3Dzookeeper%26timestamp%3D1490715100851&pid=9840&side=provider&timestamp=1490715100874 to registry registry://192.168.1.111:2181/com.alibaba.dubbo.registry.RegistryService?application=gw-service-user&dubbo=2.5.3&pid=9840&registry=zookeeper&timestamp=1490715100851, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:31:42,395][AbstractServer:69]  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /169.254.63.110:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:31:42,551][AbstractRegistry:232]  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, data: {wusc.edu.facade.user.service.PmsUserFacade=dubbo://192.168.1.111:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=update,updateUserPwd,listPage,getById,findUserByUserNo,create,deleteUserById&pid=2188&revision=1.0-SNAPSHOT&side=provider&timestamp=1490713617591 dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&pid=8556&side=provider&timestamp=1490713469118 override://0.0.0.0/wusc.edu.facade.user.service.PmsUserFacade?category=configurators&dynamic=false&enabled=true&owner=root empty://169.254.63.110/wusc.edu.facade.user.service.PmsUserFacade?application=edu-web-boss&category=routers&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&pid=7228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490714515900, com.alibaba.dubbo.monitor.MonitorService=dubbo://192.168.1.111:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=1934&revision=2.5.3&side=provider&timestamp=1490713372658 empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=configurators&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=7228&timestamp=1490714516068 empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=7228&timestamp=1490714516068}, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:31:42,633][ZkEventThread:64] Starting ZkClient event thread.
+[INFO ][20170328 23:31:42,701][Environment:100] Client environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+[INFO ][20170328 23:31:42,704][Environment:100] Client environment:host.name=windows10.microdone.cn
+[INFO ][20170328 23:31:42,705][Environment:100] Client environment:java.version=1.7.0_17
+[INFO ][20170328 23:31:42,705][Environment:100] Client environment:java.vendor=Oracle Corporation
+[INFO ][20170328 23:31:42,706][Environment:100] Client environment:java.home=D:\Program Files\Java\jdk1.7.0_17\jre
+[INFO ][20170328 23:31:42,706][Environment:100] Client environment:java.class.path=E:\repository\git\wj\edu-service-user\target\test-classes;E:\repository\git\wj\edu-service-user\target\classes;E:\repository\git\wj\edu-common\target\classes;E:\repository\git\wj\edu-common-config\target\classes;E:\repository\git\wj\edu-common-core\target\classes;E:\repository\git\wj\edu-facade-user\target\classes;D:\java\maven\repos\antlr\antlr\2.7.6\antlr-2.7.6.jar;D:\java\maven\repos\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\java\maven\repos\org\aspectj\aspectjweaver\1.7.3\aspectjweaver-1.7.3.jar;D:\java\maven\repos\cglib\cglib\2.2.2\cglib-2.2.2.jar;D:\java\maven\repos\asm\asm\3.3.1\asm-3.3.1.jar;D:\java\maven\repos\net\sf\json-lib\json-lib\2.3\json-lib-2.3-jdk15.jar;D:\java\maven\repos\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;D:\java\maven\repos\ognl\ognl\3.0.6\ognl-3.0.6.jar;D:\java\maven\repos\oro\oro\2.0.8\oro-2.0.8.jar;D:\java\maven\repos\commons-beanutils\commons-beanutils\1.8.0\commons-beanutils-1.8.0.jar;D:\java\maven\repos\commons-codec\commons-codec\1.8\commons-codec-1.8.jar;D:\java\maven\repos\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;D:\java\maven\repos\commons-digester\commons-digester\2.0\commons-digester-2.0.jar;D:\java\maven\repos\commons-fileupload\commons-fileupload\1.3.1\commons-fileupload-1.3.1.jar;D:\java\maven\repos\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;D:\java\maven\repos\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;D:\java\maven\repos\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;D:\java\maven\repos\commons-validator\commons-validator\1.1.4\commons-validator-1.1.4.jar;D:\java\maven\repos\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;D:\java\maven\repos\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;D:\java\maven\repos\net\sf\ezmorph\ezmorph\1.0.6\ezmorph-1.0.6.jar;D:\java\maven\repos\javassist\javassist\3.12.1.GA\javassist-3.12.1.GA.jar;D:\java\maven\repos\jstl\jstl\1.2\jstl-1.2.jar;D:\java\maven\repos\javax\transaction\jta\1.1\jta-1.1.jar;D:\java\maven\repos\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\java\maven\repos\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;D:\java\maven\repos\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;D:\java\maven\repos\org\springframework\spring-aop\3.2.4.RELEASE\spring-aop-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-aspects\3.2.4.RELEASE\spring-aspects-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-beans\3.2.4.RELEASE\spring-beans-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-context\3.2.4.RELEASE\spring-context-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-context-support\3.2.4.RELEASE\spring-context-support-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-core\3.2.4.RELEASE\spring-core-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-expression\3.2.4.RELEASE\spring-expression-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-instrument\3.2.4.RELEASE\spring-instrument-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-instrument-tomcat\3.2.4.RELEASE\spring-instrument-tomcat-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-jdbc\3.2.4.RELEASE\spring-jdbc-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-jms\3.2.4.RELEASE\spring-jms-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-orm\3.2.4.RELEASE\spring-orm-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-oxm\3.2.4.RELEASE\spring-oxm-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-struts\3.2.4.RELEASE\spring-struts-3.2.4.RELEASE.jar;D:\java\maven\repos\struts\struts\1.2.9\struts-1.2.9.jar;D:\java\maven\repos\xalan\xalan\2.7.1\xalan-2.7.1.jar;D:\java\maven\repos\xalan\serializer\2.7.1\serializer-2.7.1.jar;D:\java\maven\repos\org\springframework\spring-test\3.2.4.RELEASE\spring-test-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-tx\3.2.4.RELEASE\spring-tx-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-web\3.2.4.RELEASE\spring-web-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-webmvc\3.2.4.RELEASE\spring-webmvc-3.2.4.RELEASE.jar;D:\java\maven\repos\org\springframework\spring-webmvc-portlet\3.2.4.RELEASE\spring-webmvc-portlet-3.2.4.RELEASE.jar;D:\java\maven\repos\org\mybatis\mybatis\3.2.8\mybatis-3.2.8.jar;D:\java\maven\repos\org\mybatis\mybatis-spring\1.2.2\mybatis-spring-1.2.2.jar;D:\java\maven\repos\org\apache\struts\struts2-json-plugin\2.3.15.1\struts2-json-plugin-2.3.15.1.jar;D:\java\maven\repos\org\apache\struts\struts2-convention-plugin\2.3.15.1\struts2-convention-plugin-2.3.15.1.jar;D:\java\maven\repos\org\apache\struts\struts2-core\2.3.15.1\struts2-core-2.3.15.1.jar;D:\java\maven\repos\org\freemarker\freemarker\2.3.19\freemarker-2.3.19.jar;E:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\lib\tools.jar;D:\java\maven\repos\org\apache\struts\struts2-spring-plugin\2.3.15.1\struts2-spring-plugin-2.3.15.1.jar;D:\java\maven\repos\org\apache\struts\xwork\xwork-core\2.3.15.1\xwork-core-2.3.15.1.jar;D:\java\maven\repos\asm\asm-commons\3.3\asm-commons-3.3.jar;D:\java\maven\repos\asm\asm-tree\3.3\asm-tree-3.3.jar;D:\java\maven\repos\org\apache\tomcat\servlet-api\6.0.37\servlet-api-6.0.37.jar;D:\java\maven\repos\org\apache\tomcat\jsp-api\6.0.37\jsp-api-6.0.37.jar;D:\java\maven\repos\org\apache\tomcat\el-api\6.0.37\el-api-6.0.37.jar;D:\java\maven\repos\com\alibaba\druid\1.0.12\druid-1.0.12.jar;E:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\lib\jconsole.jar;D:\java\maven\repos\org\jsoup\jsoup\1.7.3\jsoup-1.7.3.jar;D:\java\maven\repos\mysql\mysql-connector-java\5.1.32\mysql-connector-java-5.1.32.jar;D:\java\maven\repos\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;D:\java\maven\repos\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;D:\java\maven\repos\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;D:\java\maven\repos\org\apache\zookeeper\zookeeper\3.4.5\zookeeper-3.4.5.jar;D:\java\maven\repos\jline\jline\0.9.94\jline-0.9.94.jar;D:\java\maven\repos\com\101tec\zkclient\0.3\zkclient-0.3.jar;D:\java\maven\repos\junit\junit\4.11\junit-4.11.jar;D:\java\maven\repos\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar
+[INFO ][20170328 23:31:42,707][Environment:100] Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.7.0_17\jre\bin;E:/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/jre/bin/client;E:/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/jre/bin;E:/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/jre/lib/i386;D:\android\adt-bundle-windows-x86_64-20130729\adt-bundle-windows-x86_64-20130729\sdk\platform-tools;D:\Program Files\Java\jdk1.7.0_17\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;D:\Program Files\MySQL\MySQL Server 5.5\bin;E:\mysql\3306\bin;E:\Program Files\TortoiseGit\bin;;.
+[INFO ][20170328 23:31:42,707][Environment:100] Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+[INFO ][20170328 23:31:42,708][Environment:100] Client environment:java.compiler=<NA>
+[INFO ][20170328 23:31:42,708][Environment:100] Client environment:os.name=Windows 7
+[INFO ][20170328 23:31:42,708][Environment:100] Client environment:os.arch=amd64
+[INFO ][20170328 23:31:42,709][Environment:100] Client environment:os.version=6.1
+[INFO ][20170328 23:31:42,710][Environment:100] Client environment:user.name=Administrator
+[INFO ][20170328 23:31:42,710][Environment:100] Client environment:user.home=C:\Users\Administrator
+[INFO ][20170328 23:31:42,711][Environment:100] Client environment:user.dir=E:\repository\git\wj\edu-service-user
+[INFO ][20170328 23:31:42,713][ZooKeeper:438] Initiating client connection, connectString=192.168.1.111:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@1b955e70
+[INFO ][20170328 23:31:52,248][ClientCnxn$SendThread:966] Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170328 23:31:52,259][ClientCnxn$SendThread:849] Socket connection established to 192.168.1.111/192.168.1.111:2181, initiating session
+[INFO ][20170328 23:31:52,400][ClientCnxn$SendThread:1207] Session establishment complete on server 192.168.1.111/192.168.1.111:2181, sessionid = 0x15b157094e00006, negotiated timeout = 30000
+[INFO ][20170328 23:31:52,406][ZkClient:449] zookeeper state changed (SyncConnected)
+[INFO ][20170328 23:31:52,416][AbstractRegistry:302]  [DUBBO] Register: dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=9840&side=provider&timestamp=1490715100874, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:31:52,526][AbstractRegistry:325]  [DUBBO] Subscribe: provider://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&category=configurators&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=9840&side=provider&timestamp=1490715100874, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:31:52,664][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&category=configurators&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=9840&side=provider&timestamp=1490715100874, urls: [override://0.0.0.0/wusc.edu.facade.user.service.PmsUserFacade?category=configurators&dynamic=false&enabled=true&owner=root], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:42:06,625][AbstractRegistry:302]  [DUBBO] Register: consumer://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=consumers&check=false&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=9840&timestamp=1490715101419, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:42:06,804][AbstractRegistry:325]  [DUBBO] Subscribe: consumer://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=providers,configurators,routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=9840&timestamp=1490715101419, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:42:07,200][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url consumer://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=providers,configurators,routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=9840&timestamp=1490715101419, urls: [dubbo://192.168.1.111:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=1934&revision=2.5.3&side=provider&timestamp=1490713372658, empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=configurators&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=9840&timestamp=1490715101419, empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=9840&timestamp=1490715101419], dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:42:07,326][AbstractClient:287]  [DUBBO] Successed connect to server /192.168.1.111:7070 from NettyClient 169.254.63.110 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x7c19035a, /192.168.1.101:62287 => /192.168.1.111:7070]], dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:42:07,328][AbstractClient:105]  [DUBBO] Start NettyClient USER-20151008FU/169.254.63.110 connect to the server /192.168.1.111:7070, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:43:07,446][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=9840&revision=2.5.3&side=provider&timestamp=1490715101419, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:44:07,620][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=9840&revision=2.5.3&side=provider&timestamp=1490715101419, dubbo version: 2.5.3, current host: 169.254.63.110
+[WARN ][20170328 23:44:27,213][AbstractServer:197]  [DUBBO] All clients has discontected from /169.254.63.110:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:44:27,316][DubboProtocol$1:130]  [DUBBO] disconected from /169.254.63.110:62259,url:dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&monitor=dubbo%3A%2F%2F192.168.1.111%3A2181%2Fcom.alibaba.dubbo.registry.RegistryService%3Fapplication%3Dgw-service-user%26dubbo%3D2.5.3%26pid%3D9840%26protocol%3Dregistry%26refer%3Ddubbo%253D2.5.3%2526interface%253Dcom.alibaba.dubbo.monitor.MonitorService%2526pid%253D9840%2526timestamp%253D1490715101419%26registry%3Dzookeeper%26timestamp%3D1490715100851&pid=9840&side=provider&timestamp=1490715100874, dubbo version: 2.5.3, current host: 169.254.63.110

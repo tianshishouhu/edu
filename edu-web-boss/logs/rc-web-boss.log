@@ -1,0 +1,348 @@
+[INFO ][20170328 23:21:12,811][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20170328 23:21:13,206][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Tue Mar 28 23:21:13 CST 2017]; root of context hierarchy
+[INFO ][20170328 23:21:13,412][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20170328 23:21:14,342][ClassPathScanningCandidateComponentProvider:231] JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO ][20170328 23:21:14,666][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/dubbo-consumer.xml]
+[INFO ][20170328 23:21:14,876][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20170328 23:21:15,437][PropertiesLoaderSupport:172] Loading properties file from class path resource [service.properties]
+[INFO ][20170328 23:21:15,690][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1fb2a275: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,edu-web-boss,com.alibaba.dubbo.config.RegistryConfig,com.alibaba.dubbo.config.MonitorConfig,pmsUserFacade,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20170328 23:21:16,658][ContextLoader:313] Root WebApplicationContext: initialization completed in 3814 ms
+[INFO ][20170328 23:21:17,873][CommonsLogger:42] Parsing configuration file [struts-default.xml]
+[INFO ][20170328 23:21:18,184][CommonsLogger:42] Parsing configuration file [struts-plugin.xml]
+[INFO ][20170328 23:21:18,353][CommonsLogger:42] Parsing configuration file [struts.xml]
+[INFO ][20170328 23:21:18,365][CommonsLogger:42] Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO ][20170328 23:21:18,366][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO ][20170328 23:21:18,366][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO ][20170328 23:21:18,366][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO ][20170328 23:21:18,367][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO ][20170328 23:21:18,369][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO ][20170328 23:21:18,370][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO ][20170328 23:21:18,370][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO ][20170328 23:21:18,370][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO ][20170328 23:21:18,371][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO ][20170328 23:21:18,371][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO ][20170328 23:21:18,371][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO ][20170328 23:21:18,372][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO ][20170328 23:21:18,372][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO ][20170328 23:21:18,372][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO ][20170328 23:21:18,373][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO ][20170328 23:21:18,373][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO ][20170328 23:21:18,373][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO ][20170328 23:21:18,374][CommonsLogger:42] Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO ][20170328 23:21:18,374][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO ][20170328 23:21:18,381][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO ][20170328 23:21:18,383][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO ][20170328 23:21:18,383][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO ][20170328 23:21:18,384][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO ][20170328 23:21:18,384][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO ][20170328 23:21:18,385][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO ][20170328 23:21:18,385][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO ][20170328 23:21:18,386][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO ][20170328 23:21:18,386][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO ][20170328 23:21:18,386][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO ][20170328 23:21:18,426][CommonsLogger:42] Initializing Struts-Spring integration...
+[INFO ][20170328 23:21:18,427][CommonsLogger:42] Setting autowire strategy to name
+[INFO ][20170328 23:21:18,428][CommonsLogger:42] ... initialized Struts-Spring integration successfully
+[INFO ][20170328 23:21:51,189][CommonsLogger:42] Detected container provider [Struts XML configuration provider (struts.xml)] needs to be reloaded. Reloading all providers.
+[INFO ][20170328 23:21:51,324][CommonsLogger:42] Parsing configuration file [struts-default.xml]
+[INFO ][20170328 23:21:51,373][CommonsLogger:42] Parsing configuration file [struts-plugin.xml]
+[INFO ][20170328 23:21:51,423][CommonsLogger:42] Parsing configuration file [struts.xml]
+[INFO ][20170328 23:21:51,426][CommonsLogger:42] Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO ][20170328 23:21:51,427][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO ][20170328 23:21:51,427][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO ][20170328 23:21:51,427][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO ][20170328 23:21:51,428][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO ][20170328 23:21:51,428][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO ][20170328 23:21:51,428][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO ][20170328 23:21:51,428][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO ][20170328 23:21:51,429][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO ][20170328 23:21:51,429][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO ][20170328 23:21:51,433][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO ][20170328 23:21:51,434][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO ][20170328 23:21:51,434][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO ][20170328 23:21:51,434][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO ][20170328 23:21:51,436][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO ][20170328 23:21:51,436][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO ][20170328 23:21:51,436][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO ][20170328 23:21:51,437][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO ][20170328 23:21:51,437][CommonsLogger:42] Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO ][20170328 23:21:51,438][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO ][20170328 23:21:51,444][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO ][20170328 23:21:51,444][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO ][20170328 23:21:51,445][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO ][20170328 23:21:51,445][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO ][20170328 23:21:51,447][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO ][20170328 23:21:51,447][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO ][20170328 23:21:51,447][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO ][20170328 23:21:51,448][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO ][20170328 23:21:51,448][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO ][20170328 23:21:51,448][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO ][20170328 23:21:51,452][CommonsLogger:42] Initializing Struts-Spring integration...
+[INFO ][20170328 23:21:51,453][CommonsLogger:42] Setting autowire strategy to name
+[INFO ][20170328 23:21:51,453][CommonsLogger:42] ... initialized Struts-Spring integration successfully
+[INFO ][20170328 23:21:56,232][AbstractRegistry:232]  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, data: {wusc.edu.facade.user.service.PmsUserFacade=override://0.0.0.0/wusc.edu.facade.user.service.PmsUserFacade?category=configurators&dynamic=false&enabled=true&owner=root, com.alibaba.dubbo.monitor.MonitorService=dubbo://192.168.1.111:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=1934&revision=2.5.3&side=provider&timestamp=1490713372658 empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=configurators&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=8556&timestamp=1490713470174 empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=8556&timestamp=1490713470174}, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:21:56,343][ZkEventThread:64] Starting ZkClient event thread.
+[INFO ][20170328 23:21:56,395][Environment:100] Client environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+[INFO ][20170328 23:21:56,396][Environment:100] Client environment:host.name=windows10.microdone.cn
+[INFO ][20170328 23:21:56,397][Environment:100] Client environment:java.version=1.7.0_17
+[INFO ][20170328 23:21:56,397][Environment:100] Client environment:java.vendor=Oracle Corporation
+[INFO ][20170328 23:21:56,399][Environment:100] Client environment:java.home=D:\Program Files\Java\jdk1.7.0_17\jre
+[INFO ][20170328 23:21:56,400][Environment:100] Client environment:java.class.path=/E:/MyEclipse/Common/plugins/org.eclipse.m2e.maven.runtime_1.0.0.me201109061757/jars/plexus-classworlds-2.4.jar
+[INFO ][20170328 23:21:56,402][Environment:100] Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.7.0_17\jre\bin;E:/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/jre/bin/client;E:/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/jre/bin;E:/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/jre/lib/i386;D:\android\adt-bundle-windows-x86_64-20130729\adt-bundle-windows-x86_64-20130729\sdk\platform-tools;D:\Program Files\Java\jdk1.7.0_17\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;D:\Program Files\MySQL\MySQL Server 5.5\bin;E:\mysql\3306\bin;E:\Program Files\TortoiseGit\bin;;.
+[INFO ][20170328 23:21:56,403][Environment:100] Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+[INFO ][20170328 23:21:56,403][Environment:100] Client environment:java.compiler=<NA>
+[INFO ][20170328 23:21:56,404][Environment:100] Client environment:os.name=Windows 7
+[INFO ][20170328 23:21:56,404][Environment:100] Client environment:os.arch=amd64
+[INFO ][20170328 23:21:56,405][Environment:100] Client environment:os.version=6.1
+[INFO ][20170328 23:21:56,406][Environment:100] Client environment:user.name=Administrator
+[INFO ][20170328 23:21:56,407][Environment:100] Client environment:user.home=C:\Users\Administrator
+[INFO ][20170328 23:21:56,407][Environment:100] Client environment:user.dir=E:\repository\git\wj\edu-web-boss
+[INFO ][20170328 23:21:56,411][ZooKeeper:438] Initiating client connection, connectString=192.168.1.111:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@69615c85
+[INFO ][20170328 23:22:06,117][ClientCnxn$SendThread:966] Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170328 23:22:06,134][ClientCnxn$SendThread:849] Socket connection established to 192.168.1.111/192.168.1.111:2181, initiating session
+[INFO ][20170328 23:22:06,280][ClientCnxn$SendThread:1207] Session establishment complete on server 192.168.1.111/192.168.1.111:2181, sessionid = 0x15b157094e00005, negotiated timeout = 30000
+[INFO ][20170328 23:22:06,288][ZkClient:449] zookeeper state changed (SyncConnected)
+[INFO ][20170328 23:22:06,432][AbstractRegistry:302]  [DUBBO] Register: consumer://169.254.63.110/wusc.edu.facade.user.service.PmsUserFacade?application=edu-web-boss&category=consumers&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&pid=7228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490714515900, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:22:06,592][AbstractRegistry:325]  [DUBBO] Subscribe: consumer://169.254.63.110/wusc.edu.facade.user.service.PmsUserFacade?application=edu-web-boss&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&pid=7228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490714515900, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:22:06,915][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url consumer://169.254.63.110/wusc.edu.facade.user.service.PmsUserFacade?application=edu-web-boss&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&pid=7228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490714515900, urls: [dubbo://192.168.1.111:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=update,updateUserPwd,listPage,getById,findUserByUserNo,create,deleteUserById&pid=2188&revision=1.0-SNAPSHOT&side=provider&timestamp=1490713617591, dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&pid=8556&side=provider&timestamp=1490713469118, override://0.0.0.0/wusc.edu.facade.user.service.PmsUserFacade?category=configurators&dynamic=false&enabled=true&owner=root, empty://169.254.63.110/wusc.edu.facade.user.service.PmsUserFacade?application=edu-web-boss&category=routers&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&pid=7228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490714515900], dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:22:08,084][AbstractClient:287]  [DUBBO] Successed connect to server /192.168.1.111:20880 from NettyClient 169.254.63.110 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x41ecc5ef, /192.168.1.101:61572 => /192.168.1.111:20880]], dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:22:08,085][AbstractClient:105]  [DUBBO] Start NettyClient USER-20151008FU/169.254.63.110 connect to the server /192.168.1.111:20880, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:22:08,539][AbstractClient:287]  [DUBBO] Successed connect to server /169.254.63.110:20880 from NettyClient 169.254.63.110 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x47408228, /169.254.63.110:61577 => /169.254.63.110:20880]], dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:22:08,540][AbstractClient:105]  [DUBBO] Start NettyClient USER-20151008FU/169.254.63.110 connect to the server /169.254.63.110:20880, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:22:08,591][ReferenceConfig:423]  [DUBBO] Refer dubbo service wusc.edu.facade.user.service.PmsUserFacade from url zookeeper://192.168.1.111:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=edu-web-boss&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&monitor=dubbo%3A%2F%2F192.168.1.111%3A2181%2Fcom.alibaba.dubbo.registry.RegistryService%3Fapplication%3Dedu-web-boss%26dubbo%3D2.5.3%26pid%3D7228%26protocol%3Dregistry%26refer%3Ddubbo%253D2.5.3%2526interface%253Dcom.alibaba.dubbo.monitor.MonitorService%2526pid%253D7228%2526timestamp%253D1490714516068%26registry%3Dzookeeper%26timestamp%3D1490714516057&owner=root&pid=7228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490714515900, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:23:33,744][AbstractRegistry:302]  [DUBBO] Register: consumer://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=consumers&check=false&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=7228&timestamp=1490714516068, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:23:33,993][AbstractRegistry:325]  [DUBBO] Subscribe: consumer://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=providers,configurators,routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=7228&timestamp=1490714516068, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:23:34,574][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url consumer://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=providers,configurators,routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=7228&timestamp=1490714516068, urls: [dubbo://192.168.1.111:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=1934&revision=2.5.3&side=provider&timestamp=1490713372658, empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=configurators&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=7228&timestamp=1490714516068, empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=7228&timestamp=1490714516068], dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:23:34,658][AbstractClient:287]  [DUBBO] Successed connect to server /192.168.1.111:7070 from NettyClient 169.254.63.110 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x4d17ea4e, /192.168.1.101:61668 => /192.168.1.111:7070]], dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:23:34,660][AbstractClient:105]  [DUBBO] Start NettyClient USER-20151008FU/169.254.63.110 connect to the server /192.168.1.111:7070, dubbo version: 2.5.3, current host: 169.254.63.110
+[WARN ][20170328 23:23:34,835][DefaultFuture:242]  [DUBBO] The timeout response finally returned at 2017-03-28 23:23:34.835, response Response [id=0, version=null, status=20, event=false, error=null, result=RpcResult [result=wusc.edu.facade.user.entity.PmsUser@4049d9d0, exception=null]], channel: /169.254.63.110:61577 -> /169.254.63.110:20880, dubbo version: 2.5.3, current host: 169.254.63.110
+[WARN ][20170328 23:23:35,416][FailoverClusterInvoker:79]  [DUBBO] Although retry the method findUserByUserNo in the service wusc.edu.facade.user.service.PmsUserFacade was successful by the provider 192.168.1.111:20880, but there have been failed providers [169.254.63.110:20880] (1/2) from the registry 192.168.1.111:2181 on the consumer 169.254.63.110 using the dubbo version 2.5.3. Last error is: Invoke remote method timeout. method: findUserByUserNo, provider: dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=edu-web-boss&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&monitor=dubbo%3A%2F%2F192.168.1.111%3A2181%2Fcom.alibaba.dubbo.registry.RegistryService%3Fapplication%3Dedu-web-boss%26dubbo%3D2.5.3%26pid%3D7228%26protocol%3Dregistry%26refer%3Ddubbo%253D2.5.3%2526interface%253Dcom.alibaba.dubbo.monitor.MonitorService%2526pid%253D7228%2526timestamp%253D1490714516068%26registry%3Dzookeeper%26timestamp%3D1490714516057&owner=root&pid=7228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490714515900, cause: Waiting server-side response timeout by scan timer. start time: 2017-03-28 23:23:32.712, end time: 2017-03-28 23:23:33.741, client elapsed: 17 ms, server elapsed: 1009 ms, timeout: 1000 ms, request: Request [id=0, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=findUserByUserNo, parameterTypes=[class java.lang.String], arguments=[admin], attachments={path=wusc.edu.facade.user.service.PmsUserFacade, interface=wusc.edu.facade.user.service.PmsUserFacade, version=0.0.0}]], channel: /169.254.63.110:61577 -> /169.254.63.110:20880, dubbo version: 2.5.3, current host: 169.254.63.110
+com.alibaba.dubbo.rpc.RpcException: Invoke remote method timeout. method: findUserByUserNo, provider: dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=edu-web-boss&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&monitor=dubbo%3A%2F%2F192.168.1.111%3A2181%2Fcom.alibaba.dubbo.registry.RegistryService%3Fapplication%3Dedu-web-boss%26dubbo%3D2.5.3%26pid%3D7228%26protocol%3Dregistry%26refer%3Ddubbo%253D2.5.3%2526interface%253Dcom.alibaba.dubbo.monitor.MonitorService%2526pid%253D7228%2526timestamp%253D1490714516068%26registry%3Dzookeeper%26timestamp%3D1490714516057&owner=root&pid=7228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490714515900, cause: Waiting server-side response timeout by scan timer. start time: 2017-03-28 23:23:32.712, end time: 2017-03-28 23:23:33.741, client elapsed: 17 ms, server elapsed: 1009 ms, timeout: 1000 ms, request: Request [id=0, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=findUserByUserNo, parameterTypes=[class java.lang.String], arguments=[admin], attachments={path=wusc.edu.facade.user.service.PmsUserFacade, interface=wusc.edu.facade.user.service.PmsUserFacade, version=0.0.0}]], channel: /169.254.63.110:61577 -> /169.254.63.110:20880
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:99)
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:65)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy0.findUserByUserNo(proxy0.java)
+	at wusc.edu.web.boss.action.PmsLoginAction.userLogin(PmsLoginAction.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:450)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:289)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:252)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:239)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:563)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout by scan timer. start time: 2017-03-28 23:23:32.712, end time: 2017-03-28 23:23:33.741, client elapsed: 17 ms, server elapsed: 1009 ms, timeout: 1000 ms, request: Request [id=0, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=findUserByUserNo, parameterTypes=[class java.lang.String], arguments=[admin], attachments={path=wusc.edu.facade.user.service.PmsUserFacade, interface=wusc.edu.facade.user.service.PmsUserFacade, version=0.0.0}]], channel: /169.254.63.110:61577 -> /169.254.63.110:20880
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.returnFromResponse(DefaultFuture.java:188)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:110)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96)
+	... 45 more
+[INFO ][20170328 23:24:34,744][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=7228&revision=2.5.3&side=provider&timestamp=1490714516068, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:25:35,025][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=7228&revision=2.5.3&side=provider&timestamp=1490714516068, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:26:35,268][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=7228&revision=2.5.3&side=provider&timestamp=1490714516068, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:27:35,651][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=7228&revision=2.5.3&side=provider&timestamp=1490714516068, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:27:55,532][DubboProtocol$1:130]  [DUBBO] disconected from /169.254.63.110:20880,url:dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=edu-web-boss&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,findUserByUserNo,getById,deleteUserById,create&monitor=dubbo%3A%2F%2F192.168.1.111%3A2181%2Fcom.alibaba.dubbo.registry.RegistryService%3Fapplication%3Dedu-web-boss%26dubbo%3D2.5.3%26pid%3D7228%26protocol%3Dregistry%26refer%3Ddubbo%253D2.5.3%2526interface%253Dcom.alibaba.dubbo.monitor.MonitorService%2526pid%253D7228%2526timestamp%253D1490714516068%26registry%3Dzookeeper%26timestamp%3D1490714516057&pid=7228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490714515900, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:33:16,146][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20170328 23:33:16,511][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Tue Mar 28 23:33:16 CST 2017]; root of context hierarchy
+[INFO ][20170328 23:33:16,693][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20170328 23:33:17,214][ClassPathScanningCandidateComponentProvider:231] JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO ][20170328 23:33:17,413][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/dubbo-consumer.xml]
+[INFO ][20170328 23:33:17,620][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20170328 23:33:18,091][PropertiesLoaderSupport:172] Loading properties file from class path resource [service.properties]
+[INFO ][20170328 23:33:18,283][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@473b5792: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,edu-web-boss,com.alibaba.dubbo.config.RegistryConfig,com.alibaba.dubbo.config.MonitorConfig,pmsUserFacade,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20170328 23:33:19,366][ContextLoader:313] Root WebApplicationContext: initialization completed in 3213 ms
+[INFO ][20170328 23:33:20,319][CommonsLogger:42] Parsing configuration file [struts-default.xml]
+[INFO ][20170328 23:33:21,087][CommonsLogger:42] Parsing configuration file [struts-plugin.xml]
+[INFO ][20170328 23:33:21,213][CommonsLogger:42] Parsing configuration file [struts.xml]
+[INFO ][20170328 23:33:21,231][CommonsLogger:42] Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO ][20170328 23:33:21,232][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO ][20170328 23:33:21,232][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO ][20170328 23:33:21,233][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO ][20170328 23:33:21,234][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO ][20170328 23:33:21,237][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO ][20170328 23:33:21,237][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO ][20170328 23:33:21,238][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO ][20170328 23:33:21,238][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO ][20170328 23:33:21,238][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO ][20170328 23:33:21,239][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO ][20170328 23:33:21,239][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO ][20170328 23:33:21,239][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO ][20170328 23:33:21,240][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO ][20170328 23:33:21,240][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO ][20170328 23:33:21,240][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO ][20170328 23:33:21,241][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO ][20170328 23:33:21,241][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO ][20170328 23:33:21,241][CommonsLogger:42] Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO ][20170328 23:33:21,242][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO ][20170328 23:33:21,247][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO ][20170328 23:33:21,248][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO ][20170328 23:33:21,248][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO ][20170328 23:33:21,249][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO ][20170328 23:33:21,249][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO ][20170328 23:33:21,249][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO ][20170328 23:33:21,250][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO ][20170328 23:33:21,250][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO ][20170328 23:33:21,251][CommonsLogger:42] Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO ][20170328 23:33:21,251][CommonsLogger:42] Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO ][20170328 23:33:21,296][CommonsLogger:42] Initializing Struts-Spring integration...
+[INFO ][20170328 23:33:21,298][CommonsLogger:42] Setting autowire strategy to name
+[INFO ][20170328 23:33:21,299][CommonsLogger:42] ... initialized Struts-Spring integration successfully
+[INFO ][20170328 23:35:42,347][AbstractRegistry:232]  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, data: {wusc.edu.facade.user.service.PmsUserFacade=override://0.0.0.0/wusc.edu.facade.user.service.PmsUserFacade?category=configurators&dynamic=false&enabled=true&owner=root, com.alibaba.dubbo.monitor.MonitorService=dubbo://192.168.1.111:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=1934&revision=2.5.3&side=provider&timestamp=1490713372658 empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=configurators&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=7228&timestamp=1490714516068 empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=7228&timestamp=1490714516068}, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170328 23:35:42,425][ZkEventThread:64] Starting ZkClient event thread.
+[INFO ][20170328 23:35:42,539][Environment:100] Client environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+[INFO ][20170328 23:35:42,540][Environment:100] Client environment:host.name=windows10.microdone.cn
+[INFO ][20170328 23:35:42,541][Environment:100] Client environment:java.version=1.7.0_17
+[INFO ][20170328 23:35:42,542][Environment:100] Client environment:java.vendor=Oracle Corporation
+[INFO ][20170328 23:35:42,542][Environment:100] Client environment:java.home=D:\Program Files\Java\jdk1.7.0_17\jre
+[INFO ][20170328 23:35:42,543][Environment:100] Client environment:java.class.path=/E:/MyEclipse/Common/plugins/org.eclipse.m2e.maven.runtime_1.0.0.me201109061757/jars/plexus-classworlds-2.4.jar
+[INFO ][20170328 23:35:42,544][Environment:100] Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.7.0_17\jre\bin;E:/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/jre/bin/client;E:/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/jre/bin;E:/MyEclipse/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/jre/lib/i386;D:\android\adt-bundle-windows-x86_64-20130729\adt-bundle-windows-x86_64-20130729\sdk\platform-tools;D:\Program Files\Java\jdk1.7.0_17\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;D:\Program Files\MySQL\MySQL Server 5.5\bin;E:\mysql\3306\bin;E:\Program Files\TortoiseGit\bin;;.
+[INFO ][20170328 23:35:42,544][Environment:100] Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+[INFO ][20170328 23:35:42,545][Environment:100] Client environment:java.compiler=<NA>
+[INFO ][20170328 23:35:42,546][Environment:100] Client environment:os.name=Windows 7
+[INFO ][20170328 23:35:42,546][Environment:100] Client environment:os.arch=amd64
+[INFO ][20170328 23:35:42,547][Environment:100] Client environment:os.version=6.1
+[INFO ][20170328 23:35:42,548][Environment:100] Client environment:user.name=Administrator
+[INFO ][20170328 23:35:42,548][Environment:100] Client environment:user.home=C:\Users\Administrator
+[INFO ][20170328 23:35:42,549][Environment:100] Client environment:user.dir=E:\repository\git\wj\edu-web-boss
+[INFO ][20170328 23:35:42,552][ZooKeeper:438] Initiating client connection, connectString=192.168.1.111:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@1d84ed88
+[INFO ][20170328 23:35:52,035][ClientCnxn$SendThread:966] Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170328 23:35:52,040][ClientCnxn$SendThread:849] Socket connection established to 192.168.1.111/192.168.1.111:2181, initiating session
+[INFO ][20170328 23:35:52,093][ClientCnxn$SendThread:1207] Session establishment complete on server 192.168.1.111/192.168.1.111:2181, sessionid = 0x15b157094e00007, negotiated timeout = 30000
+[INFO ][20170328 23:35:52,105][ZkClient:449] zookeeper state changed (SyncConnected)
+[INFO ][20170328 23:35:52,311][AbstractRegistry:302]  [DUBBO] Register: consumer://169.254.63.110/wusc.edu.facade.user.service.PmsUserFacade?application=edu-web-boss&category=consumers&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=6432&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490715342034, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:35:52,460][AbstractRegistry:325]  [DUBBO] Subscribe: consumer://169.254.63.110/wusc.edu.facade.user.service.PmsUserFacade?application=edu-web-boss&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=6432&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490715342034, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:35:52,758][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url consumer://169.254.63.110/wusc.edu.facade.user.service.PmsUserFacade?application=edu-web-boss&category=providers,configurators,routers&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=6432&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490715342034, urls: [dubbo://192.168.1.111:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=update,updateUserPwd,listPage,getById,findUserByUserNo,create,deleteUserById&pid=2188&revision=1.0-SNAPSHOT&side=provider&timestamp=1490713617591, dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=9840&side=provider&timestamp=1490715100874, override://0.0.0.0/wusc.edu.facade.user.service.PmsUserFacade?category=configurators&dynamic=false&enabled=true&owner=root, empty://169.254.63.110/wusc.edu.facade.user.service.PmsUserFacade?application=edu-web-boss&category=routers&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=6432&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490715342034], dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:35:53,862][AbstractClient:287]  [DUBBO] Successed connect to server /192.168.1.111:20880 from NettyClient 169.254.63.110 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x5d30f96b, /192.168.1.101:62253 => /192.168.1.111:20880]], dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:35:53,863][AbstractClient:105]  [DUBBO] Start NettyClient USER-20151008FU/169.254.63.110 connect to the server /192.168.1.111:20880, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:35:54,376][AbstractClient:287]  [DUBBO] Successed connect to server /169.254.63.110:20880 from NettyClient 169.254.63.110 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x52ef0f9c, /169.254.63.110:62259 => /169.254.63.110:20880]], dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:35:54,378][AbstractClient:105]  [DUBBO] Start NettyClient USER-20151008FU/169.254.63.110 connect to the server /169.254.63.110:20880, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:35:54,405][ReferenceConfig:423]  [DUBBO] Refer dubbo service wusc.edu.facade.user.service.PmsUserFacade from url zookeeper://192.168.1.111:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=edu-web-boss&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&monitor=dubbo%3A%2F%2F192.168.1.111%3A2181%2Fcom.alibaba.dubbo.registry.RegistryService%3Fapplication%3Dedu-web-boss%26dubbo%3D2.5.3%26pid%3D6432%26protocol%3Dregistry%26refer%3Ddubbo%253D2.5.3%2526interface%253Dcom.alibaba.dubbo.monitor.MonitorService%2526pid%253D6432%2526timestamp%253D1490715342184%26registry%3Dzookeeper%26timestamp%3D1490715342175&owner=root&pid=6432&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490715342034, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:42:07,082][AbstractRegistry:302]  [DUBBO] Register: consumer://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=consumers&check=false&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=6432&timestamp=1490715342184, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:42:07,187][AbstractRegistry:325]  [DUBBO] Subscribe: consumer://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=providers,configurators,routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=6432&timestamp=1490715342184, dubbo version: 2.5.3, current host: 169.254.63.110
+[WARN ][20170328 23:42:07,501][DefaultFuture:242]  [DUBBO] The timeout response finally returned at 2017-03-28 23:42:07.500, response Response [id=2, version=null, status=20, event=false, error=null, result=RpcResult [result=wusc.edu.facade.user.entity.PmsUser@17625db7, exception=null]], channel: /169.254.63.110:62259 -> /169.254.63.110:20880, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:42:07,513][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url consumer://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=providers,configurators,routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=6432&timestamp=1490715342184, urls: [dubbo://192.168.1.111:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=1934&revision=2.5.3&side=provider&timestamp=1490713372658, empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=configurators&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=6432&timestamp=1490715342184, empty://169.254.63.110/com.alibaba.dubbo.monitor.MonitorService?category=routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=6432&timestamp=1490715342184], dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:42:07,544][AbstractClient:287]  [DUBBO] Successed connect to server /192.168.1.111:7070 from NettyClient 169.254.63.110 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x35a499ce, /192.168.1.101:62292 => /192.168.1.111:7070]], dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:42:07,551][AbstractClient:105]  [DUBBO] Start NettyClient USER-20151008FU/169.254.63.110 connect to the server /192.168.1.111:7070, dubbo version: 2.5.3, current host: 169.254.63.110
+[WARN ][20170328 23:42:07,752][FailoverClusterInvoker:79]  [DUBBO] Although retry the method findUserByUserNo in the service wusc.edu.facade.user.service.PmsUserFacade was successful by the provider 192.168.1.111:20880, but there have been failed providers [169.254.63.110:20880] (1/2) from the registry 192.168.1.111:2181 on the consumer 169.254.63.110 using the dubbo version 2.5.3. Last error is: Invoke remote method timeout. method: findUserByUserNo, provider: dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=edu-web-boss&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&monitor=dubbo%3A%2F%2F192.168.1.111%3A2181%2Fcom.alibaba.dubbo.registry.RegistryService%3Fapplication%3Dedu-web-boss%26dubbo%3D2.5.3%26pid%3D6432%26protocol%3Dregistry%26refer%3Ddubbo%253D2.5.3%2526interface%253Dcom.alibaba.dubbo.monitor.MonitorService%2526pid%253D6432%2526timestamp%253D1490715342184%26registry%3Dzookeeper%26timestamp%3D1490715342175&owner=root&pid=6432&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490715342034, cause: Waiting server-side response timeout. start time: 2017-03-28 23:42:06.056, end time: 2017-03-28 23:42:07.080, client elapsed: 15 ms, server elapsed: 1008 ms, timeout: 1000 ms, request: Request [id=2, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=findUserByUserNo, parameterTypes=[class java.lang.String], arguments=[admin], attachments={path=wusc.edu.facade.user.service.PmsUserFacade, interface=wusc.edu.facade.user.service.PmsUserFacade, version=0.0.0}]], channel: /169.254.63.110:62259 -> /169.254.63.110:20880, dubbo version: 2.5.3, current host: 169.254.63.110
+com.alibaba.dubbo.rpc.RpcException: Invoke remote method timeout. method: findUserByUserNo, provider: dubbo://169.254.63.110:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=edu-web-boss&check=false&dubbo=2.5.3&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&monitor=dubbo%3A%2F%2F192.168.1.111%3A2181%2Fcom.alibaba.dubbo.registry.RegistryService%3Fapplication%3Dedu-web-boss%26dubbo%3D2.5.3%26pid%3D6432%26protocol%3Dregistry%26refer%3Ddubbo%253D2.5.3%2526interface%253Dcom.alibaba.dubbo.monitor.MonitorService%2526pid%253D6432%2526timestamp%253D1490715342184%26registry%3Dzookeeper%26timestamp%3D1490715342175&owner=root&pid=6432&revision=1.0-SNAPSHOT&side=consumer&timestamp=1490715342034, cause: Waiting server-side response timeout. start time: 2017-03-28 23:42:06.056, end time: 2017-03-28 23:42:07.080, client elapsed: 15 ms, server elapsed: 1008 ms, timeout: 1000 ms, request: Request [id=2, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=findUserByUserNo, parameterTypes=[class java.lang.String], arguments=[admin], attachments={path=wusc.edu.facade.user.service.PmsUserFacade, interface=wusc.edu.facade.user.service.PmsUserFacade, version=0.0.0}]], channel: /169.254.63.110:62259 -> /169.254.63.110:20880
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:99)
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:65)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy0.findUserByUserNo(proxy0.java)
+	at wusc.edu.web.boss.action.PmsLoginAction.userLogin(PmsLoginAction.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:450)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:289)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:252)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:239)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:563)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout. start time: 2017-03-28 23:42:06.056, end time: 2017-03-28 23:42:07.080, client elapsed: 15 ms, server elapsed: 1008 ms, timeout: 1000 ms, request: Request [id=2, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=findUserByUserNo, parameterTypes=[class java.lang.String], arguments=[admin], attachments={path=wusc.edu.facade.user.service.PmsUserFacade, interface=wusc.edu.facade.user.service.PmsUserFacade, version=0.0.0}]], channel: /169.254.63.110:62259 -> /169.254.63.110:20880
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:107)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96)
+	... 45 more
+[INFO ][20170328 23:43:07,581][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=6432&revision=2.5.3&side=provider&timestamp=1490715342184, dubbo version: 2.5.3, current host: 169.254.63.110
+[INFO ][20170328 23:44:07,866][DubboMonitor:80]  [DUBBO] Send statistics to monitor zookeeper://192.168.1.111:2181/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=6432&revision=2.5.3&side=provider&timestamp=1490715342184, dubbo version: 2.5.3, current host: 169.254.63.110
+[ERROR][20170328 23:44:10,954][DubboMonitor$1:72]  [DUBBO] Unexpected error occur at send statistic, cause: Failed to invoke the method collect in the service com.alibaba.dubbo.monitor.MonitorService. Tried 3 times of the providers [192.168.1.111:7070] (1/1) from the registry 192.168.1.111:2181 on the consumer 169.254.63.110 using the dubbo version 2.5.3. Last error is: Invoke remote method timeout. method: collect, provider: dubbo://192.168.1.111:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=6432&revision=2.5.3&side=provider&timestamp=1490715342184, cause: Waiting server-side response timeout. start time: 2017-03-28 23:44:09.952, end time: 2017-03-28 23:44:10.954, client elapsed: 0 ms, server elapsed: 1002 ms, timeout: 1000 ms, request: Request [id=13, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=collect, parameterTypes=[class com.alibaba.dubbo.common.URL], arguments=[count://169.254.63.110/wusc.edu.facade.user.service.PmsUserFacade/update?application=edu-web-boss&concurrent=0&elapsed=0&failure=0&input=0&interface=wusc.edu.facade.user.service.PmsUserFacade&max.concurrent=0&max.elapsed=0&max.input=0&max.output=0&method=update&output=0&provider=169.254.63.110:20880&success=0&timestamp=1490715847867], attachments={path=com.alibaba.dubbo.monitor.MonitorService, interface=com.alibaba.dubbo.monitor.MonitorService, version=0.0.0}]], channel: /192.168.1.101:62292 -> /192.168.1.111:7070, dubbo version: 2.5.3, current host: 169.254.63.110
+com.alibaba.dubbo.rpc.RpcException: Failed to invoke the method collect in the service com.alibaba.dubbo.monitor.MonitorService. Tried 3 times of the providers [192.168.1.111:7070] (1/1) from the registry 192.168.1.111:2181 on the consumer 169.254.63.110 using the dubbo version 2.5.3. Last error is: Invoke remote method timeout. method: collect, provider: dubbo://192.168.1.111:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=6432&revision=2.5.3&side=provider&timestamp=1490715342184, cause: Waiting server-side response timeout. start time: 2017-03-28 23:44:09.952, end time: 2017-03-28 23:44:10.954, client elapsed: 0 ms, server elapsed: 1002 ms, timeout: 1000 ms, request: Request [id=13, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=collect, parameterTypes=[class com.alibaba.dubbo.common.URL], arguments=[count://169.254.63.110/wusc.edu.facade.user.service.PmsUserFacade/update?application=edu-web-boss&concurrent=0&elapsed=0&failure=0&input=0&interface=wusc.edu.facade.user.service.PmsUserFacade&max.concurrent=0&max.elapsed=0&max.input=0&max.output=0&method=update&output=0&provider=169.254.63.110:20880&success=0&timestamp=1490715847867], attachments={path=com.alibaba.dubbo.monitor.MonitorService, interface=com.alibaba.dubbo.monitor.MonitorService, version=0.0.0}]], channel: /192.168.1.101:62292 -> /192.168.1.111:7070
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:101)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy1.collect(proxy1.java)
+	at com.alibaba.dubbo.monitor.dubbo.DubboMonitor.send(DubboMonitor.java:113)
+	at com.alibaba.dubbo.monitor.dubbo.DubboMonitor$1.run(DubboMonitor.java:70)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:351)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout. start time: 2017-03-28 23:44:09.952, end time: 2017-03-28 23:44:10.954, client elapsed: 0 ms, server elapsed: 1002 ms, timeout: 1000 ms, request: Request [id=13, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=collect, parameterTypes=[class com.alibaba.dubbo.common.URL], arguments=[count://169.254.63.110/wusc.edu.facade.user.service.PmsUserFacade/update?application=edu-web-boss&concurrent=0&elapsed=0&failure=0&input=0&interface=wusc.edu.facade.user.service.PmsUserFacade&max.concurrent=0&max.elapsed=0&max.input=0&max.output=0&method=update&output=0&provider=169.254.63.110:20880&success=0&timestamp=1490715847867], attachments={path=com.alibaba.dubbo.monitor.MonitorService, interface=com.alibaba.dubbo.monitor.MonitorService, version=0.0.0}]], channel: /192.168.1.101:62292 -> /192.168.1.111:7070
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:107)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96)
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77)
+	... 14 more
+[WARN ][20170328 23:44:15,148][DefaultFuture:242]  [DUBBO] The timeout response finally returned at 2017-03-28 23:44:15.148, response Response [id=11, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.1.101:62292 -> /192.168.1.111:7070, dubbo version: 2.5.3, current host: 169.254.63.110
+[WARN ][20170328 23:44:15,355][DefaultFuture:242]  [DUBBO] The timeout response finally returned at 2017-03-28 23:44:15.355, response Response [id=12, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.1.101:62292 -> /192.168.1.111:7070, dubbo version: 2.5.3, current host: 169.254.63.110
+[WARN ][20170328 23:44:15,371][DefaultFuture:242]  [DUBBO] The timeout response finally returned at 2017-03-28 23:44:15.371, response Response [id=13, version=null, status=20, event=false, error=null, result=RpcResult [result=null, exception=null]], channel: /192.168.1.101:62292 -> /192.168.1.111:7070, dubbo version: 2.5.3, current host: 169.254.63.110
